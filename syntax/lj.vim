@@ -7,6 +7,9 @@ if exists("b:current_syntax")
   finish
 endif
 
+"functionNames
+syn match ljFunction '\zs\w\+\ze()\s\+{'
+
 " Keywords
 syn keyword ljStatement if else while return continue break test
 
@@ -17,11 +20,13 @@ syn region ljBlockComment start="/\*" end="\*/" contains=ljTodo
 
 " Literals
 syn match ljConstant 'true\|false\|\d\+'
+
 " Strings
 syn region ljString start=/\v"/ skip=/\v\\./ end=/\v"/
 
 let b:current_syntax="lj"
 
+hi def link ljFunction     Function
 hi def link ljStatement    Statement
 hi def link ljTodo         Todo
 hi def link ljComment      Comment

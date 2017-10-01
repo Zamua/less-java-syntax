@@ -5,7 +5,9 @@
     comment
 */
 
-main() {
+a = 11
+
+sample() {
     while (true) {
         if (false) {
             break;
@@ -18,3 +20,5 @@ main() {
     b = false;
     print("adsada");
 }
+
+test sample() = a
