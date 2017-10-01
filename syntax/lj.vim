@@ -8,7 +8,7 @@ if exists("b:current_syntax")
 endif
 
 "functionNames
-syn match ljFunction '\zs\w\+\ze()\s\+{'
+syn match ljFunction '\zs\w\+\ze\s*(.*)\s\+{'
 
 " Keywords
 syn keyword ljStatement if else while return continue break test
