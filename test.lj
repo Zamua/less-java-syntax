@@ -1,0 +1,20 @@
+//comment TODO
+
+/* 
+    block
+    comment
+*/
+
+main() {
+    while (true) {
+        if (false) {
+            break;
+        } else {
+            continue;
+        }
+    }
+
+    a = 0x12310;
+    b = false;
+    print("adsada");
+}
